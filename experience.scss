@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #1d1d1d;
+    --tertiary: #357edd;
+    --quaternary: #101010;
+    --quinary: #aaaaaa;
+    --shadow-color: #00000057 0px 2px 8px;
+  }
+
+html{
+    background-color: #1d1d1d;
+    width: 100vw;
+    height: 100vh;
+}
+
+.back {
+    margin-top: 40vh;
+    width: 300px;
+}
+  
+.back a {
+    text-decoration: none;
+}
+  
+.back a i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: var(--quinary);
+    font-size: 2.5rem;
+    color: var(--quaternary);
+}

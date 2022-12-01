@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Lobster&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #1d1d1d;
+  --tertiary: #357edd;
+  --quaternary: #101010;
+  --quinary: #aaaaaa;
+  --shadow-color: #00000057 0px 2px 8px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #363636;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  background-color: var(--quaternary);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact {
+  display: block;
+  width: 500px;
+  padding: 1rem;
+  margin: auto;
+}
+.contact .hdn {
+  text-align: center;
+  margin: auto;
+  color: var(--primary-color);
+}
+.contact label {
+  color: #8e8e8e;
+  width: 100%;
+}
+.contact label input {
+  width: 100%;
+}
+.contact label input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.contact label input::before {
+  content: "файл хавсаргах";
+  text-align: center;
+  width: calc(100% - 18px);
+  color: #fff;
+  display: inline-block;
+  background-color: #8e8e8e;
+  border: 1px solid #8e8e8e;
+  border-radius: 0.5rem;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.contact .name {
+  border: solid 1px #ffffff;
+}
+.contact .name legend {
+  color: #fff;
+}
+.contact .mean {
+  border: solid 1px #ffffff;
+}
+.contact .mean legend {
+  color: #fff;
+}
+.contact fieldset {
+  border-radius: 0.5rem;
+  color: #fff;
+  width: 100%;
+  background-color: none;
+  border: solid 1px #8e8e8e;
+  margin: 1rem 0;
+}
+.contact fieldset legend {
+  font-size: 14px;
+  color: var(--quinary);
+  margin: 0 1rem;
+  padding: 0 0.2rem;
+}
+.contact fieldset input {
+  background-color: rgba(16, 16, 16, 0);
+  width: 100%;
+  outline: 0;
+  font-size: large;
+  font-weight: 600;
+  padding: 0.5rem;
+  padding-top: 0;
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: #fff;
+}
+.contact fieldset input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #101010 inset !important;
+  -webkit-text-fill-color: #fff;
+}
+.contact fieldset input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #101010 inset;
+  -webkit-text-fill-color: #ffffff;
+}
+.contact fieldset .number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+.contact fieldset .file {
+  padding: 0;
+}
+.contact fieldset textarea {
+  width: 100% !important;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  outline: 0;
+  font-size: large;
+  height: 31px;
+  border: none;
+  padding: 0 0.5rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+}
+.contact .l4 {
+  width: 100%;
+}
+.contact .l4 .select {
+  display: flex;
+  position: relative;
+}
+.contact .l4 .select::after {
+  font: var(--fa-font-solid);
+  content: "\f0dd";
+  color: #fff;
+  right: 0;
+  position: absolute;
+  padding: 0 1em;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.contact .l4 .select select {
+  overflow-y: hidden;
+  background-color: #101010;
+  width: 100%;
+  border: none !important;
+  outline: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  padding: 0.5rem;
+  padding-top: 0;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #8e8e8e;
+}
+.contact .l4 .select select:part(listbox) {
+  border-radius: 5px;
+}
+.contact .l4 .select select option {
+  width: 100%;
+  height: 30px;
+  font-size: large;
+}
+.contact .l4 .select select option p {
+  font-size: large;
+}
+.contact button {
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: #4CAF50;
+  color: #fff;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  background-color: #4CAF50;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFF;
+  margin-right: 1rem;
+  transition: all 300ms;
+}
+.contact button i {
+  font-size: 18px;
+}
+.contact button p {
+  height: 35px;
+}
+.contact button:hover {
+  background-color: #fff;
+  color: #4CAF50;
+}
+
+::-moz-placeholder {
+  font-weight: 500;
+}
+
+:-ms-input-placeholder {
+  font-weight: 500;
+}
+
+::placeholder {
+  font-weight: 500;
+}
+
+.back {
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.back a {
+  text-decoration: none;
+}
+.back a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: var(--quinary);
+  font-size: 2.5rem;
+  color: var(--quaternary);
+}/*# sourceMappingURL=contact.css.map */
